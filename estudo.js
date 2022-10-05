@@ -12,3 +12,22 @@ function escreva(){
     document.write(tabuada + " x 9 = " + (tabuada*9) + "<br>");
     document.write(tabuada + " x 10 = " + (tabuada*10) + "<br>");
     }
+
+    let lista =("Jesus", "Spessato","Duarte","jorge","Neuza","Gilmar","jossyara");
+
+function mostraLista(){
+    document.write("tamanho da lista: " + lista.length + "<br");
+    document.write("professor: " + lista[1]+ "<br>");
+    for(let i = 0; i < lista.length; 1++){
+        document.write("professor: "+ lista[1] + "<br>");
+    }
+}
+
+function multiplica(){
+    for(let i = 6; i <= 8; i++){
+       document.write("Tabuada do " + i + "<br>")
+       for(let j = 1; j <= 10; j++){
+        document.write(i + " x "+j+" = " + (i*j) + "<br>");
+       }
+    }
+}
