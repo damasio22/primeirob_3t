@@ -17,9 +17,8 @@ function escreva(){
 
 function mostraLista(){
     document.write("tamanho da lista: " + lista.length + "<br");
-    document.write("professor: " + lista[1]+ "<br>");
-    for(let i = 0; i < lista.length; 1++){
-        document.write("professor: "+ lista[1] + "<br>");
+    for(let i = 0; i < lista.length; i++){
+        document.write("professor: " + lista[i] + "<br>");
     }
 }
 
@@ -29,5 +28,18 @@ function multiplica(){
        for(let j = 1; j <= 10; j++){
         document.write(i + " x "+j+" = " + (i*j) + "<br>");
        }
+       document.write("<br>");
     }
 }
+function total(){
+   let v = document.getElementById("valor").value;
+   let j = document.getElementById("juros").value;
+   let t = document.getElementById("meses").value;
+   let r = 0;
+   for(let i=1; i <= t;i++){
+        r = v * (1+(j/100));
+        v = r;
+   }
+   document.write("Resultado:" + r);
+}
+
