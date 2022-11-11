@@ -5,16 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro B</title>
+    <title>Primeiro G</title>
     <script src="estudo.js"></script>
+    <link rel="stylesheet" href="geral.css">
 </head>
+
 <body>
+    <div class="calc">
+        <div id="spTotal">
+            <span id="total">R$ 0,00</span>
+        </div>
+        Capital: <input id="capital" type="text"><br>
+        Juros mensais: <input id="juros" type="text"><br>
+        Quantidade de meses: <input id="meses" type="text"><br>
+        <button onclick="total()">Calcular</button>
+        <div id="spLista">
+            <span id="listaMes"></span>
+        </div>
+    </div>
 
-   valor: <input id="valor" type="text"><br>
-   juros (mensais): <input id="juros" type="text"><br>
-   nr meses: <input id="meses" type="text"><br>
-   <button onclick="total()">enviar</button>
+    <div class="calcESG">
+        <div class="spRaiz">
+            <span id="raiz">x1:?  x2:?</span>
+        </div>
+        a: <input id="a" type="text"> <br>
+        b: <input id="b" type="text"> <br>
+        c: <input id="c" type="text"> <br>
+        <button onclick="calculaRaiz()">Calcula</button>
+    </div>
 
-   
 </body>
+
 </html>
